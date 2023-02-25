@@ -64,6 +64,19 @@ The lower right switches between windows and mac mode. The current mode is
 displayed in the OLED. Currently all this means is that the GUI and CTRL keys
 are switched.
 
+### Legal Layer
+![Number Layer](layer-law.png)
+
+OK, so, admittedly this layer is only useful to people who are 
+appellate lawyers in New Mexico and rock a corne or a lily. So,
+just me. 
+
+I put federal on the left and New Mexico on the right.
+
+The quote gives you a close quote single quote, the kind you use at
+the beginning of a shortened patent number that can be such a pain to
+enter.
+
 ## The Displays
 
 I didn't find the display on the default keymap very useful. Although the
@@ -112,6 +125,10 @@ so I moved it to the more accessible location.
 The large thumb keys operate as shift when held. This has made a huge difference for
 me. I can'd believe space isn't shift everywhere, it just works so well.
 
+None of my Lilys have LEDs. (Don't get me started on how the PCBs in the lily58 glow
+repository are broken). And, in any event, the MT3 keycaps I am using on them don't 
+let the light through anyway. So as much as I enjoy a good light show, I've disabled 
+it in this keymap.
 
 # todo
 
