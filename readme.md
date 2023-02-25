@@ -12,18 +12,18 @@ inspired by miryoku but that made use of the extra keys.
 In some ways this is inferior to simply usuing miryoku everywhere, an approach which 
 provides the highest level of consistency between keyboards. Nevertheless, I suspect there
 are other people like me out there that like miryoku but wouldn't mind being able to use 
-a number row. Hopefully this layout can fill that need.
+the extra keys when they are available. Hopefully this layout can fill that need.
 
 ## Design Goals
 
 - Mostly compatible with the miryoku layout while taking
-advantage of the extra keys on the lily58
+advantage of the extra keys on the lily58 and six-row corne
 
 - Support both QWERTY and COLEMAK
 
 - Switch between windows and mac
 
-- Support unicode characters
+- Support unicode characters on windows and mac
 
 - Make better use of the display
 
@@ -33,22 +33,8 @@ The layouts are basically self-documenting, but here they are:
 
 ### Colemak
 
-```
 
-,-----------------------------------------.                    ,-----------------------------------------.
-| ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  `~  |
-|------+------+------+------+------+------|                    |------+------+------+------+------+------|
-| Tab  |   Q  |   W  |   F  |   P  |   G  |                    |   J  |   L  |   U  |   Y  |   ;  |  \   |
-|------+------+------+------+------+------|                    |------+------+------+------+------+------|
-|osmspc|   A  |   R  |   S  |   T  |   G  |-------.    ,-------|   H  |   N  |   E  |   I  |   O  |  '   |
-|------+------+------+------+------+------|   [   |    |   ]   |------+------+------+------+------+------|
-| `~   |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   K  |   M  |   ,  |   .  |   /  |  -_  |
-`-----------------------------------------/       /     \      \-----------------------------------------'
-                  | LCTL |  esc | NAV  | /Space  /       \ bspc \  |RAISE | DEL  | LALT |
-                  |      |      |      |/  lsft /         \      \ | enter|      |      |
-                  `----------------------------'           '------''--------------------'
- 
-```
+![Nav Layer](layer-colemak.png)
 
 This is my primary layer, and one of the two default layer choices.
 Although I've included shift on the home row, I mainly use it on the 
@@ -114,14 +100,18 @@ so it is persistent.
 
 The main difference is that the gui and control keys are swapped. This
 is shown in the OLED. This makes it pretty painless to switch between
-PC and Mac, at least for the tools that I use.
-
-Soon, this feature will also ensure that the keyboard sends unicode 
-correctly for the selected OS.
+PC and Mac, at least for the tools that I use. But this also allows
+the keyboard to send unicode correctly based on the selected OS.
 
 ## Misc Features
 
-Hold down space key for shift.
+The large thumb keys are space and backspace, respectively. I had originally used
+space and enter, like many other keymaps, but backspace is used much more frequently
+so I moved it to the more accessible location.
+
+The large thumb keys operate as shift when held. This has made a huge difference for
+me. I can'd believe space isn't shift everywhere, it just works so well.
+
 
 # todo
 
