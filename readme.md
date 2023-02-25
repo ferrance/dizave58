@@ -2,7 +2,7 @@
 
 The lily58 was my first alternative keyboard and is still a favorite. I knew right away
 however that I was going to want to go a bit smaller. I looked for a layout that worked on
-both the lily and the corne and quickly found miryoku. 
+both the lily and the corne and quickly found [miryoku](https://github.com/manna-harbour/miryoku). 
 
 While miryoku is amazing and very well thought out, it leaves many keys unused on the 
 lily and even a few unused on the six column corne. After a good deal of thought and 
@@ -34,26 +34,28 @@ The layouts are basically self-documenting, but here they are:
 ### Colemak
 
 ```
-/* COLEMAK
- * ,-----------------------------------------.                    ,-----------------------------------------.
- * | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  `~  |
- * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  |   Q  |   W  |   F  |   P  |   G  |                    |   J  |   L  |   U  |   Y  |   ;  |  \   |
- * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |osmspc|   A  |   R  |   S  |   T  |   G  |-------.    ,-------|   H  |   N  |   E  |   I  |   O  |  '   |
- * |------+------+------+------+------+------|   [   |    |   ]   |------+------+------+------+------+------|
- * | `~   |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   K  |   M  |   ,  |   .  |   /  |  -_  |
- * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   | LCTL |  tab | NAV  | /Space  /       \ bspc \  |RAISE | DEL  | LALT |
- *                   |      |      |      |/  lsft /         \      \ | enter|      |      |
- *                   `----------------------------'           '------''--------------------'
- */
+
+,-----------------------------------------.                    ,-----------------------------------------.
+| ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  `~  |
+|------+------+------+------+------+------|                    |------+------+------+------+------+------|
+| Tab  |   Q  |   W  |   F  |   P  |   G  |                    |   J  |   L  |   U  |   Y  |   ;  |  \   |
+|------+------+------+------+------+------|                    |------+------+------+------+------+------|
+|osmspc|   A  |   R  |   S  |   T  |   G  |-------.    ,-------|   H  |   N  |   E  |   I  |   O  |  '   |
+|------+------+------+------+------+------|   [   |    |   ]   |------+------+------+------+------+------|
+| `~   |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   K  |   M  |   ,  |   .  |   /  |  -_  |
+`-----------------------------------------/       /     \      \-----------------------------------------'
+                  | LCTL |  esc | NAV  | /Space  /       \ bspc \  |RAISE | DEL  | LALT |
+                  |      |      |      |/  lsft /         \      \ | enter|      |      |
+                  `----------------------------'           '------''--------------------'
+ 
 ```
-![Colemak layer](layer-colemak.png)
 
 This is my primary layer, and one of the two default layer choices.
 Although I've included shift on the home row, I mainly use it on the 
-two main thumb keys. There is no dedicated shift for the pinky fingers.
+two main thumb keys. There is no dedicated shift for the pinky fingers. 
+
+For an amazing overview of home row mods, check out
+[precondition's page](https://precondition.github.io/home-row-mods).
 
 ### Nav Layer
 ![Nav Layer](layer-nav.png)
