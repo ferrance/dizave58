@@ -38,10 +38,19 @@ The layouts are basically self-documenting, but here they are:
 
 This is my primary layer, and one of the two default layer choices.
 Although I've included shift on the home row, I mainly use it on the 
-two main thumb keys. There is no dedicated shift for the pinky fingers. 
+two main thumb keys. There is no dedicated shift for the pinky fingers.
+The QWERTY is the same but, you know, with a QWERTY layout. 
 
+The dizave58 uses home row mods in the GACS configuration (for windows) or CAGS (for mac).
+The display shows either a windows or mac symbol to indicate which mode the keyboard is in.
 For an amazing overview of home row mods, check out
 [precondition's page](https://precondition.github.io/home-row-mods).
+
+Many of the existing lily58 keymaps use the pinky keys and/or the thumb cluster 
+for the mod keys. This isn't really an option on the corne, and didn't strike me
+as a good use of the thumb cluster on the lily either. So I've mostly avoided doing
+that. The outermost thumb keys duplicate, mainly because I couldn't put anything 
+important there because then I'd be missing it on the corne. 
 
 ### Nav Layer
 ![Nav Layer](layer-nav.png)
