@@ -146,8 +146,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LEGAL] = LAYOUT(
   XXXXXXX ,_______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, DZ_EMDS,
   _______, XXXXXXX, XXXXXXX,  DZ_CFR,  DZ_USC,  DZ_F3D,                   DZ_NMSC, DZ_NMSA, DZ_NMRA, XXXXXXX, XXXXXXX, XXXXXXX,
-  _______, XXXXXXX, XXXXXXX,  DZ_SEC, DZ_PARA,  DZ_F2D,                   DZ_NMCA, DZ_RP  , DZ_BIC , DZ_AB  , XXXXXXX, DZ_RQOT,
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   DZ_NM, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  _______,  DZ_ABQ, XXXXXXX,  DZ_SEC, DZ_PARA,  DZ_F2D,                   DZ_NMCA, DZ_RP  , DZ_BIC , DZ_AB  , XXXXXXX, DZ_RQOT,
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   DZ_NM, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DZ_EMDS,
                              XXXXXXX, XXXXXXX, XXXXXXX, DZ_NBSP, _______, XXXXXXX, XXXXXXX, XXXXXXX
 )
 

@@ -46,6 +46,9 @@ bool dizave_process_record_user(uint16_t keycode, keyrecord_t *record);
 #define DZQ_L LALT_T(KC_L)
 #define DZQ_SC RGUI_T(KC_SCLN)
 
+#define DZ_VDRT G(C(KC_RIGHT))
+#define DZ_VDLT G(C(KC_LEFT))
+
 // Dizave Keycodes
 enum my_keycodes {
   DZ_WIN = SAFE_RANGE,
@@ -63,7 +66,8 @@ enum my_keycodes {
   DZ_NMCA,
   DZ_NM,
   DZ_F3D,
-  DZ_F2D
+  DZ_F2D,
+  DZ_ABQ
 };
 
 #define DZ_SPC  LSFT_T(KC_SPC)
