@@ -88,11 +88,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | boot |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | pscr |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |  1   |  2   |  3   |  4   |  5   |                    |   6  |   7  |   8  |  9   |   0  |      |
+ * |      |  1   |  2   |  3   |  4   |  5   |                    | pgup | home |  up  | end  |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      | gui  | alt  | ctrl | shft |      |-------.    ,-------| caps | left | down |  up  |right |      |
+ * |      | gui  | alt  | ctrl | shft |      |-------.    ,-------| pgdn | left | down |right |      |      |
  * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
- * |      |      |      |      |      |      |-------|    |-------|  ins |  home| pgdn | pgup | end  |      |
+ * |      |      |      |      |      |      |-------|    |-------| caps |      |      |      | ins  | del  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |      |      |      | /       /       \      \  |      |      |      |
  *                   |      |      |      |/       /         \      \ | bspc |      |      |
@@ -100,9 +100,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_NAV] = LAYOUT(
   QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PSCR,
-  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-  _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                   KC_CAPS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
-  _______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, KC_INS,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______,
+  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_PGUP, KC_HOME, KC_UP,   KC_END,  XXXXXXX, _______,
+  _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                   KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX, _______,
+  _______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, KC_INS,  KC_DEL,
                              _______, _______, _______, _______, _______, KC_BSPC, _______, _______
 ),
 /*  NUMBERS
@@ -125,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   DZ_LAW , KC_LBRC, KC_7,    KC_8,    KC_9,  KC_RBRC,                     XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, DZ_CLMK,
   _______, KC_SCLN, KC_4,    KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
   _______, KC_PPLS, KC_1,    KC_2,    KC_3,  KC_MINS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, XXXXXXX, DZ_WIN,
-                             KC_COMM, KC_DOT, KC_0,  _______, _______,  _______, _______, _______
+                             KC_COMM, KC_DOT, KC_0,  KC_SPC, _______,  _______, _______, _______
 ),
 
 /* LEGAL - only useful to NM appellate lawyers who use split ortho keebs. so, just me basically
