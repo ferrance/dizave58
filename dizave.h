@@ -55,6 +55,7 @@ enum my_keycodes {
   DZ_MAC,
   DZ_QWTY,
   DZ_CLMK,
+  DZ_CLSE,
   DZ_USC,
   DZ_CFR,
   DZ_NMSA,
