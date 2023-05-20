@@ -19,10 +19,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include QMK_KEYBOARD_H
+#include <stdio.h>                 // for snprintf
 #include "led.h"
 #include "host.h"
-#include <stdio.h> // for snprintf
-#include "dizave.h"
+#include "dizave.h"                // the dizave library
+#include "features/achordion.h"    // https://getreuer.info/posts/keyboards/achordion/index.html
 
 // Layers
 enum layer_number {
@@ -152,8 +153,40 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+//
+// achordian functions
+//
 
+void matrix_scan_user(void) {
+  achordion_task();
+}
 
+bool achordion_chord(uint16_t tap_hold_keycode,
+                     keyrecord_t* tap_hold_record,
+                     uint16_t other_keycode,
+                     keyrecord_t* other_record) 
+{
+  return achordion_opposite_hands(tap_hold_record, other_record);
+}
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+
+  if (!process_achordion(keycode, record)) { return false; }
+
+  switch(keycode) {
+    case DZ_QWTY:
+       set_single_persistent_default_layer(_QWERTY);
+      break;
+    case DZ_CLMK:
+      set_single_persistent_default_layer(_COLEMAK);
+      break;
+    default:
+	return dizave_process_record_user(keycode, record);
+      break;
+  }
+
+  return true;
+}
 //SSD1306 OLED update loop, make sure to enable OLED_ENABLE=yes in rules.mk
 #ifdef OLED_ENABLE
 
@@ -215,19 +248,4 @@ bool oled_task_user(void) {
 }
 #endif // OLED_ENABLE
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
-  switch(keycode) {
-    case DZ_QWTY:
-       set_single_persistent_default_layer(_QWERTY);
-      break;
-    case DZ_CLMK:
-      set_single_persistent_default_layer(_COLEMAK);
-      break;
-    default:
-	return dizave_process_record_user(keycode, record);
-      break;
-  }
-
-  return true;
-}
