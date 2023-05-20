@@ -34,7 +34,7 @@ The layouts are basically self-documenting, but here they are:
 ### Colemak
 
 
-![Nav Layer](layer-colemak.png)
+![Nav Layer](images/layer-colemak.png)
 
 This is my primary layer, and one of the two default layer choices.
 Although I've included shift on the home row, I mainly use it on the 
@@ -53,11 +53,11 @@ that. The outermost thumb keys duplicate, mainly because I couldn't put anything
 important there because then I'd be missing it on the corne. 
 
 ### Nav Layer
-![Nav Layer](layer-nav.png)
+![Nav Layer](images/layer-nav.png)
 
 
 ### Number Layer
-![Number Layer](layer-numbers.png)
+![Number Layer](images/layer-numbers.png)
 
 Although in general I have tried to keep keys on the opposite side of the 
 board from the corresponding layer key, I have made a small departure here.
@@ -74,7 +74,7 @@ displayed in the OLED. Currently all this means is that the GUI and CTRL keys
 are switched.
 
 ### Legal Layer
-![Number Layer](layer-law.png)
+![Number Layer](images/layer-law.png)
 
 OK, so, admittedly this layer is only useful to people who are 
 appellate lawyers in New Mexico and rock a corne or a lily. So,
