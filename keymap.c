@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   |      |      |      |/       /         \      \ | bspc |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
-[_NUM] = LAYOUT(
+[_NAV] = LAYOUT(
   QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PSCR,
   _______, DZ_CLSE, XXXXXXX, DZ_VDLT, DZ_VDRT, KC_5,                      KC_PGUP, KC_HOME, KC_UP,   KC_END,  XXXXXXX, _______,
   _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                   KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX, _______,
@@ -240,6 +240,8 @@ bool oled_task_user(void) {
         oled_write_ln("    ", false);
     } 
 
+      snprintf(layer_state_str, sizeof(layer_state_str), "Lyr%u", layer_state);
+      oled_write_ln(layer_state_str, false);
 
   } else {  // right side
     dizave_render_logo();
