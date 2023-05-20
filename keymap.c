@@ -29,7 +29,7 @@ enum layer_number {
   _QWERTY = 0,
   _COLEMAK,
   _NAV,
-  _NUMBERS, 
+  _NUM, 
   _LEGAL
 };
 
@@ -52,11 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
  [_QWERTY] = LAYOUT(
-  KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
-  KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
-  KC_BSPC,  DZQ_A,  DZQ_S,   DZQ_D,   DZQ_F,   KC_G,                     KC_H,    DZQ_J,   DZQ_K,   DZQ_L,   KC_SCLN, KC_QUOT,
-  KC_ESC,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LPRN,  KC_RPRN,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
-                        KC_LCTL,  DZ_LAW, MO(_NAV), DZ_SPC, KC_ENT, DZ_BSPC, KC_DEL, KC_LALT
+  KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+  KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                        KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
+  KC_BSPC,  DZQ_A,  DZQ_S,   DZQ_D,   DZQ_F,   KC_G,                        KC_H,    DZQ_J,   DZQ_K,   DZQ_L,   KC_SCLN, KC_QUOT,
+  KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LPRN,  KC_RPRN,     KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
+                          KC_LCTL,  DZ_LAW,MO(_NAV), DZ_SPC,    KC_ENT, MO(_NUM),  KC_DEL,    KC_LALT
 ),
 
 /* COLEMAK
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,   KC_Q,   KC_W,    KC_F,    KC_P,    KC_G,                      KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,  KC_BSLS,
   KC_BSPC,  DZ_A,   DZ_R,    DZ_S,    DZ_T,    KC_D,                      KC_H,    DZ_N,    DZ_E,    DZ_I,    DZ_O,     KC_QUOT,
   KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_LBRC,  KC_RBRC,  KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
-                          KC_LCTL,  DZ_OSS, MO(_NAV),  DZ_SPC,   KC_ENT,  DZ_BSPC, DZ_OSS,  KC_LALT
+                          KC_LCTL,  DZ_OSS, MO(_NAV),  DZ_SPC,   KC_ENT,  MO(_NUM),DZ_OSS,  KC_LALT
 ),
 
 
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   |      |      |      |/       /         \      \ | bspc |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
-[_NAV] = LAYOUT(
+[_NUM] = LAYOUT(
   QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PSCR,
   _______, DZ_CLSE, XXXXXXX, DZ_VDLT, DZ_VDRT, KC_5,                      KC_PGUP, KC_HOME, KC_UP,   KC_END,  XXXXXXX, _______,
   _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                   KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX, _______,
@@ -119,12 +119,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   `----------------------------'           '------''--------------------'
  */
 
-[_NUMBERS] = LAYOUT(
-  _______ , KC_F1,   KC_F2,   KC_F3,   KC_F4, KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  DZ_QWTY,
-  _______ , KC_LBRC, KC_7,    KC_8,    KC_9,  KC_RBRC,                     XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, DZ_CLMK,
-   DZ_LAW, KC_SCLN, KC_4,    KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
-  _______, KC_PPLS, KC_1,    KC_2,    KC_3,  KC_MINS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, XXXXXXX, DZ_WIN,
-                             KC_COMM, KC_DOT, KC_0,  KC_SPC, _______,  _______, _______, _______
+[_NUM] = LAYOUT(
+  _______, KC_F1,   KC_F2,  KC_F3,   KC_F4, KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  DZ_QWTY,
+  _______, KC_LBRC, KC_7,   KC_8,    KC_9,  KC_RBRC,                     XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, DZ_CLMK,
+   DZ_LAW, KC_SCLN, KC_4,   KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
+  _______, KC_PPLS, KC_1,   KC_2,    KC_3,  KC_MINS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, XXXXXXX, DZ_WIN,
+                            KC_COMM, KC_LPRN, KC_0,  KC_RPRN, _______,  _______, _______, _______
 ),
 
 /* LEGAL - only useful to NM appellate lawyers who use split ortho keebs. so, just me basically

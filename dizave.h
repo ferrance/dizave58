@@ -46,13 +46,22 @@ bool dizave_process_record_user(uint16_t keycode, keyrecord_t *record);
 #define DZQ_L LALT_T(KC_L)
 #define DZQ_SC RGUI_T(KC_SCLN)
 
+// one shot home row mods 
+// use on the nav and number layers
+#define DZ_LCTL OSM(MOD_LCTL)
+#define DZ_LSFT OSM(MOD_LSFT)
+#define DZ_LALT OSM(MOD_LALT)
+#define DZ_LGUI OSM(MOD_LGUI)
+#define DZ_RCTL OSM(MOD_RCTL)
+#define DZ_RSFT OSM(MOD_RSFT)
+#define DZ_RGUI OSM(MOD_RGUI)
 #define DZ_VDRT G(C(KC_RIGHT))
 #define DZ_VDLT G(C(KC_LEFT))
 
 // Dizave Keycodes
 enum my_keycodes {
   DZ_WIN = SAFE_RANGE,
-  DZ_MAC,
+//  DZ_MAC,
   DZ_QWTY,
   DZ_CLMK,
   DZ_CLSE,
