@@ -38,16 +38,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* QWERTY
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  _   |
+ * |  `~  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  _   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | Tab  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | BSPC |   A  |   S  |   D  |   F  |   G  |-------.    ,-------|   H  |   J  |   K  |   L  |   ;  |  '   |
  * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
- * |LShift|   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
+ * | ESC  |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   | LCtrl| tab  | NAV  | /Space  /       \Enter \  |RAISE |BackSP| RALT |
- *                   |      |      |      |/       /         \      \ |      |      |      |
+ *                   | LCtrl| OSM  | NAV  | /Space  /       \Enter \  |RAISE |BackSP| RALT |
+ *                   |      | LSFT |      |/       /         \      \ |      |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
 
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
   KC_BSPC,  DZQ_A,  DZQ_S,   DZQ_D,   DZQ_F,   KC_G,                     KC_H,    DZQ_J,   DZQ_K,   DZQ_L,   KC_SCLN, KC_QUOT,
   KC_ESC,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LPRN,  KC_RPRN,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
-                        KC_LCTL,  DZ_LAW, MO(_NAV), DZ_SPC, KC_SFTENT, DZ_BSPC, KC_DEL, KC_LALT
+                        KC_LCTL,  DZ_LAW, MO(_NAV), DZ_SPC, KC_ENT, DZ_BSPC, KC_DEL, KC_LALT
 ),
 
 /* COLEMAK
@@ -69,18 +69,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|   [   |    |   ]   |------+------+------+------+------+------|
  * | esc  |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   K  |   M  |   ,  |   .  |   /  |  -_  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   | LCTL |  tab | NAV  | /Space  /       \Enter \  |RAISE | DEL  | LALT |
- *                   |      |      |      |/  lsft /         \      \ |  BSPC|      |      |
+ *                   | LCTL |  OSM | NAV  | /Space  /       \Enter \  | NUM | OSM  | LALT |
+ *                   |      | LSFT |      |/       /         \      \ |     | LSFT |      |
  *                   `----------------------------'           '------''--------------------'
  */
 
  [_COLEMAK] = LAYOUT(
-  KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_BSPC,
-  KC_TAB,   KC_Q,   KC_W,    KC_F,    KC_P,    KC_G,                     KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,  KC_BSLS,
-  DZ_OSS,  DZ_A,   DZ_R,    DZ_S,    DZ_T,    KC_D,                     KC_H,    DZ_N,    DZ_E,    DZ_I,    DZ_O,     KC_QUOT,
-  KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LBRC,  KC_RBRC,  KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
-                        KC_LCTL, DZ_LAW, MO(_NAV), DZ_SPC,   KC_SFTENT,  DZ_BSPC, KC_DEL,  KC_LALT
-//                        KC_LCTL, DZ_LAW, MO(_NAV), DZ_SPC,   DZT1,  DZT2, KC_DEL,  KC_LALT
+  KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_BSPC,
+  KC_TAB,   KC_Q,   KC_W,    KC_F,    KC_P,    KC_G,                      KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,  KC_BSLS,
+  KC_BSPC,  DZ_A,   DZ_R,    DZ_S,    DZ_T,    KC_D,                      KC_H,    DZ_N,    DZ_E,    DZ_I,    DZ_O,     KC_QUOT,
+  KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_LBRC,  KC_RBRC,  KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
+                          KC_LCTL,  DZ_OSS, MO(_NAV),  DZ_SPC,   KC_ENT,  DZ_BSPC, DZ_OSS,  KC_LALT
 ),
 
 
@@ -168,8 +167,8 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 //const char *read_mode_icon(bool swap);
 
 bool oled_task_user(void) {
-  if (is_keyboard_master()) {
 
+  if (is_keyboard_master()) {
 
     oled_write_ln("Layer", false);
 
@@ -202,7 +201,7 @@ bool oled_task_user(void) {
     oled_write_ln("     ", false);
 
     // CAPS LOCK
-    if (IS_HOST_LED_ON(USB_LED_CAPS_LOCK)) { 
+    if (host_keyboard_led_state().caps_lock) { 
         oled_write_ln("CAPS",true);
     } else {
         oled_write_ln("    ", false);
