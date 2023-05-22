@@ -1,6 +1,11 @@
 # dizave58
 
-The lily58 was my first alternative keyboard and is still a favorite. I knew right away
+The lily58 was my first alternative keyboard and is still a favorite. I mostly
+rock the corne these days but have a few lillies kicking around. So the dizave 
+layouts are my attemp to have a layout that works will on both of those keyboards,
+tailored to my ridiculous needs and preferences.
+
+I knew right away
 however that I was going to want to go a bit smaller. I looked for a layout that worked on
 both the lily and the corne and quickly found [miryoku](https://github.com/manna-harbour/miryoku). 
 
@@ -142,6 +147,4 @@ it in this keymap.
 # todo
 
 - close key that is cmd Q on mac and alt F4 on windows
-- layer with some legal keys: paragragh, section. this requires unicode detect
 - get underglow working 
-- save default layer to eeprom
