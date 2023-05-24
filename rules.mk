@@ -1,3 +1,4 @@
+#disable to make firmware smaller
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control
@@ -9,10 +10,11 @@ AUDIO_ENABLE = no           # Audio output
 RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight.
 RGB_MATRIX_ENABLE = no 
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
+
+#needed for features of this keymap
 UNICODE_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
-
 #DYNAMIC_TAPPING_TERM_ENABLE = yes
 
 OLED_ENABLE = yes     # OLED display
