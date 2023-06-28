@@ -74,10 +74,13 @@ enum my_keycodes {
   DZ_AB,
   DZ_NMSC,
   DZ_NMCA,
-  DZ_NM,
+  DZ_NM,     // N.M.
+  DZ_NM2,    // New Mexico
   DZ_F3D,
   DZ_F2D,
-  DZ_ABQ
+  DZ_ABQ,   // Albuquerque
+  DZ_RGB, 
+  DZ_SCAP   // cross platform screen cap
 };
 
 #define DZ_SPC  LSFT_T(KC_SPC)
