@@ -232,6 +232,12 @@ bool dizave_process_record_user(uint16_t keycode, keyrecord_t *record)
       }
       return false;
 
+    case DZ_F4:
+      if (record->event.pressed) {
+        SEND_STRING("F.4th");
+      }
+      return false;
+
     case DZ_F3D:
       if (record->event.pressed) {
         SEND_STRING("F.3d");
@@ -241,6 +247,18 @@ bool dizave_process_record_user(uint16_t keycode, keyrecord_t *record)
     case DZ_F2D:
       if (record->event.pressed) {
         SEND_STRING("F.2d");
+      }
+      return false;
+
+    case DZ_P3D:
+      if (record->event.pressed) {
+        SEND_STRING("P.3d");
+      }
+      return false;
+
+    case DZ_P2D:
+      if (record->event.pressed) {
+        SEND_STRING("P.2d");
       }
       return false;
 
@@ -255,7 +273,78 @@ bool dizave_process_record_user(uint16_t keycode, keyrecord_t *record)
          SEND_STRING("New Mexico");
       }
       return false;
-  }  // switch
+
+    case DZ_SEE:
+      if (record->event.pressed) {
+        if (is_mac()) {
+          SEND_STRING(SS_LGUI("i")"See"SS_LGUI("i")" ");
+        } else {
+          SEND_STRING(SS_LCTL("i")"See"SS_LCTL("i")" ");
+        }
+      }
+      return false;
+
+    case DZ_SEEG:
+      if (record->event.pressed) {
+        if (is_mac()) {
+          SEND_STRING(SS_LGUI("i")"See, e.g."SS_LGUI("i")", ");
+        } else {
+          SEND_STRING(SS_LCTL("i")"See, e.g."SS_LCTL("i")", ");
+        }
+      }
+      return false;
+
+    case DZ_SALSO:
+      if (record->event.pressed) {
+        if (is_mac()) {
+          SEND_STRING(SS_LGUI("i")"See also"SS_LGUI("i")" ");
+        } else {
+          SEND_STRING(SS_LCTL("i")"See also"SS_LCTL("i")" ");
+        }
+      }
+      return false;
+
+    case DZ_ID:
+      if (record->event.pressed) {
+        if (is_mac()) {
+          SEND_STRING(SS_LGUI("i")"Id."SS_LGUI("i")" ");
+        } else {
+          SEND_STRING(SS_LCTL("i")"Id."SS_LCTL("i")" ");
+        }
+      }
+      return false;
+
+
+    case DZ_ID2:
+      if (record->event.pressed) {
+        if (is_mac()) {
+          SEND_STRING(SS_LGUI("i")"id."SS_LGUI("i")" ");
+        } else {
+          SEND_STRING(SS_LCTL("i")"id."SS_LCTL("i")" ");
+        }
+      }
+      return false;
+
+      case DZ_EA:
+      if (record->event.pressed) {
+        SEND_STRING("(emphasis added)");
+      }
+      return false;      
+
+      case DZ_CO:
+      if (record->event.pressed) {
+        SEND_STRING("(citations omitted)");
+      }
+      return false;      
+
+      case DZ_ROG:
+      if (record->event.pressed) {
+        SEND_STRING("Interrogatory");
+      }
+      return false;      
+
+    }  // switch
 
   return true;
+
 }

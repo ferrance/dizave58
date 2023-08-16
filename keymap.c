@@ -142,23 +142,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-------------------------------------------.
  * |      |      |      |      |      |      |                    |      |       |       |      |      |DZEMDS|
  * |------+------+------+------+------+------|                    |------+-------+-------+------+------+------|
- * |      |      |      |DZ_CFR|DZ_USC| f.3d |                    | nmsc |DZ_NMSA|DZ_NMRA|      |      |      |
+ * |      |      |  CFR | F.4th| eg   |      |                    | RP   | NMSC  | NMRA  | co   |      |      |
  * |------+------+------+------+------+------|                    |------+-------+-------+------+------+------|
- * |DZ_ABQ|      |      |DZ_SEC|DZ_PAR| f.2d |-------.    ,-------| nmca | DZ_RP |DZ_BIC | DZ_AB|      |DZRQOT|
+ * |      | ABQ  |  USC | F.3d | See  | P.3d |-------.    ,-------| BIC  | NMCA  | NMSA  | ea   |      |DZRQOT|
  * |------+------+------+------+------+------|       |    |       |------+-------+-------+------+------+------|
- * |DZ_NM2|      |      |      |      |      |-------|    |-------| n.m. |       |       |      |      |      |
+ * |      |  NM  |      | F.2d | also | P.2d |-------|    |-------| AB   |  N.M. |       |      |      |      |
  * `-----------------------------------------/       /     \      \-------------------------------------------'
- *                   |      |      |      | / nbsp  /       \      \  |      |      |      |
- *                   |      |      |      |/       /         \      \ |      |      |      |
+ *                   |      |      |      | / para  /       \      \  |      |      |      |
+ *                   |      | nbsp | sec  |/       /         \      \ |      |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
 
 [_LEGAL] = LAYOUT(
   XXXXXXX ,_______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, DZ_EMDS,
-  _______, XXXXXXX, XXXXXXX,  DZ_CFR,  DZ_USC,  DZ_F3D,                   DZ_NMSC, DZ_NMSA, DZ_NMRA, XXXXXXX, XXXXXXX, XXXXXXX,
-  _______,  DZ_ABQ, XXXXXXX,  DZ_SEC, DZ_PARA,  DZ_F2D,                   DZ_NMCA, DZ_RP  , DZ_BIC , DZ_AB  , XXXXXXX, DZ_RQOT,
-  _______,  DZ_NM2, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   DZ_NM, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DZ_EMDS,
-                             XXXXXXX, XXXXXXX, XXXXXXX, DZ_NBSP, _______, XXXXXXX, XXXXXXX, XXXXXXX
+  _______, XXXXXXX,  DZ_CFR,   DZ_F4, DZ_SEEG, XXXXXXX,                     DZ_RP, DZ_NMSC, DZ_NMRA,   DZ_CO, XXXXXXX, XXXXXXX,
+  _______,  DZ_ABQ,  DZ_USC,  DZ_F3D,  DZ_SEE,  DZ_P3D,                    DZ_BIC, DZ_NMCA, DZ_NMSA,   DZ_EA, XXXXXXX, DZ_RQOT,
+  _______,  DZ_NM2, XXXXXXX,  DZ_F2D,DZ_SALSO,  DZ_P2D, XXXXXXX, XXXXXXX,   DZ_AB,   DZ_NM, XXXXXXX, XXXXXXX, XXXXXXX, DZ_EMDS,
+                             XXXXXXX, DZ_NBSP,  DZ_SEC, DZ_PARA,   DZ_ID,  DZ_ID2, XXXXXXX, XXXXXXX
 )
 
 };

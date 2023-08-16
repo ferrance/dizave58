@@ -76,9 +76,20 @@ enum my_keycodes {
   DZ_NMCA,
   DZ_NM,     // N.M.
   DZ_NM2,    // New Mexico
+  DZ_F4,     // F.4th
   DZ_F3D,
   DZ_F2D,
-  DZ_ABQ,   // Albuquerque
+  DZ_P3D,    // P.3d
+  DZ_P2D,    // P.2d
+  DZ_SEE,    // See
+  DZ_SEEG,   // See, e.g.
+  DZ_SALSO,  // See also
+  DZ_ID,     // Id.
+  DZ_ID2,    // id.
+  DZ_ABQ,    // Albuquerque
+  DZ_EA,     // emphasis added
+  DZ_CO,     // citations omitted
+  DZ_ROG,    // Interrogatory
   DZ_RGB, 
   DZ_SCAP   // cross platform screen cap
 };
