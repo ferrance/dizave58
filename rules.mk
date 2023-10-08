@@ -15,10 +15,11 @@ SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 UNICODE_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+#TAP_DANCE_ENABLE = yes       # for double tapping brackets
 #DYNAMIC_TAPPING_TERM_ENABLE = yes
 
 OLED_ENABLE = yes     # OLED display
-OLED_DRIVER = SSD1306  # selects the right driver
+OLED_DRIVER = ssd1306  # selects the right driver
 
 # If you want to change the display of OLED, you need to change here
 SRC +=  ./lib/rgb_state_reader.c \

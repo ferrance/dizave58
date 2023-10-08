@@ -34,7 +34,6 @@ enum layer_number {
   _LEGAL
 };
 
-
 // key override - make shift backspace send a delete
 const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
@@ -112,14 +111,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PSCR,
   _______, DZ_CLSE, XXXXXXX, DZ_VDLT, DZ_VDRT, KC_PSCR,                   KC_PGUP, KC_HOME, KC_UP,   KC_END,  XXXXXXX, KC_DEL,
   _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_SCRL,                   KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX, KC_INS,
-  _______, _______, _______, _______, _______, KC_PAUS, KC_LBRC, KC_RBRC, DZ_SCAP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_CAPS,
+  _______, _______, _______, _______, _______, KC_PAUS, KC_LBRC, KC_RBRC, DZ_SCAP,   WLEFT, XXXXXXX,  WRIGHT, XXXXXXX,  KC_CAPS,
                              _______, _______, _______, _______, _______, OSL(_LEGAL), _______, _______
 ),
 /*  NUMBERS
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |qwerty|
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |   [  |  7   |  8   |  9   |  ]   |                    |      |      |   (  |  )   |      |colmak|
+ * |      |   [  |  7   |  8   |  9   |  ]   |                    |      |   (  |   )  |     |      |colmak|
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |DZ_LAW|   ;  |  4   |  5   |  6   |  =+  |-------.    ,-------|      | RSFT | RCTL | LALT | RGUI |      |
  * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
@@ -132,9 +131,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_NUM] = LAYOUT(
   _______, KC_F1,   KC_F2,  KC_F3,   KC_F4, KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  DZ_QWTY,
-  _______, KC_LBRC, KC_7,   KC_8,    KC_9,  KC_RBRC,                     XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, DZ_CLMK,
-   DZ_LAW, KC_SCLN, KC_4,   KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
-  _______, KC_GRV,  KC_1,   KC_2,    KC_3,  KC_MINS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DZ_WIN,
+  _______, XXXXXXX, KC_7,   KC_8,    KC_9,  KC_PPLS,                     XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, DZ_CLMK,
+  DZ_LAW,S(KC_SCLN),KC_4,   KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
+  _______, KC_GRV,  KC_1,   KC_2,    KC_3,  KC_BSLS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DZ_WIN,
                             _______, _______, KC_0,  _______, _______,  _______, _______, _______
 ),
 
@@ -158,7 +157,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, XXXXXXX,  DZ_CFR,   DZ_F4, DZ_SEEG, XXXXXXX,                     DZ_RP, DZ_NMSC, DZ_NMRA,   DZ_CO, XXXXXXX, XXXXXXX,
   _______,  DZ_ABQ,  DZ_USC,  DZ_F3D,  DZ_SEE,  DZ_P3D,                    DZ_BIC, DZ_NMCA, DZ_NMSA,   DZ_EA, XXXXXXX, DZ_RQOT,
   _______,  DZ_NM2, XXXXXXX,  DZ_F2D,DZ_SALSO,  DZ_P2D, XXXXXXX, XXXXXXX,   DZ_AB,   DZ_NM, XXXXXXX, XXXXXXX, XXXXXXX, DZ_EMDS,
-                             XXXXXXX, DZ_NBSP,  DZ_SEC, DZ_PARA,   DZ_ID,  DZ_ID2, XXXXXXX, XXXXXXX
+                             XXXXXXX,  DZ_SEC, DZ_PARA, _______,   DZ_ID,  DZ_ID2, XXXXXXX, XXXXXXX
 )
 
 };
