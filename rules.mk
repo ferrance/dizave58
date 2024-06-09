@@ -10,6 +10,7 @@ AUDIO_ENABLE = no           # Audio output
 RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight.
 RGB_MATRIX_ENABLE = no 
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
+AVR_USE_MINIMAL_PRINTF = yes
 
 #needed for features of this keymap
 UNICODE_ENABLE = yes

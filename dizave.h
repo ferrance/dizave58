@@ -30,14 +30,14 @@ bool dizave_process_record_user(uint16_t keycode, keyrecord_t *record);
 //oid dz_close(tap_dance_state_t *state, void *user_data);
 
 // Colemak home row mods
-#define DZ_A LGUI_T(KC_A)
-#define DZ_R LALT_T(KC_R)
-#define DZ_S LCTL_T(KC_S)
-#define DZ_T LSFT_T(KC_T)
-#define DZ_N RSFT_T(KC_N)
-#define DZ_E RCTL_T(KC_E)
-#define DZ_I LALT_T(KC_I)
-#define DZ_O RGUI_T(KC_O)
+#define DZ_Z LGUI_T(KC_A)
+#define DZ_X LALT_T(KC_R)
+#define DZ_C LCTL_T(KC_S)
+#define DZ_V LSFT_T(KC_T)
+#define DZ_M RSFT_T(KC_N)
+#define DZ_COMM RCTL_T(KC_E)
+#define DZ_DOT LALT_T(KC_I)
+#define DZ_SLSH RGUI_T(KC_O)
 
 // QWERTY home row mods - GACS
 #define DZQ_A LGUI_T(KC_A)

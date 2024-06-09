@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                        KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
   KC_BSPC,  DZQ_A,  DZQ_S,   DZQ_D,   DZQ_F,   KC_G,                        KC_H,    DZQ_J,   DZQ_K,   DZQ_L,   KC_SCLN, KC_QUOT,
-  KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LPRN,  KC_RPRN,     KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
+  KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LPRN,  KC_RPRN,     KC_N,    DZ_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
                           KC_LCTL,  DZ_LAW,MO(_NAV), KC_SPC,    KC_ENT, MO(_NUM),  KC_DEL,    KC_LALT
 ),
 
@@ -87,8 +87,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_COLEMAK] = LAYOUT(
   KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_BSPC,
   KC_TAB,   KC_Q,   KC_W,    KC_F,    KC_P,    KC_G,                      KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,  KC_BSLS,
-  KC_BSPC,  DZ_A,   DZ_R,    DZ_S,    DZ_T,    KC_D,                      KC_H,    DZ_N,    DZ_E,    DZ_I,    DZ_O,     KC_QUOT,
-  KC_ESC,   KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_LBRC,  KC_RBRC,  KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_MINS,
+  KC_BSPC,  KC_A,   KC_R,    KC_S,    KC_T,    KC_D,                      KC_H,    KC_N,    KC_E,    KC_I,    KC_O,     KC_QUOT,
+  KC_ESC,   DZ_Z,   DZ_X,    DZ_C,    DZ_V,    KC_B,  KC_LBRC,  KC_RBRC,  KC_K,    DZ_M,    DZ_COMM, DZ_DOT,  DZ_SLSH,  KC_MINS,
                           KC_LCTL,  DZ_OSS, MO(_NAV),  KC_SPC,   KC_ENT,  MO(_NUM),DZ_OSS,  KC_LALT
 ),
 
