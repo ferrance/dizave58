@@ -131,10 +131,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_NUM] = LAYOUT(
   _______, KC_F1,   KC_F2,  KC_F3,   KC_F4, KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  DZ_QWTY,
-  _______, XXXXXXX, KC_7,   KC_8,    KC_9,  KC_PPLS,                     XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, DZ_CLMK,
+  _______, KC_LBRC, KC_7,   KC_8,    KC_9,  KC_RBRC,                     XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, DZ_CLMK,
   DZ_LAW,S(KC_SCLN),KC_4,   KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
   _______, KC_GRV,  KC_1,   KC_2,    KC_3,  KC_BSLS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DZ_WIN,
-                            _______, _______, KC_0,  _______, _______,  _______, _______, _______
+                            _______, _______, KC_0,  KC_MINS, _______,  _______, _______, _______
 ),
 
 /* LEGAL - only useful to NM appellate lawyers who use split ortho keebs. so, just me basically
