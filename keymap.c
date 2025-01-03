@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* QWERTY
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |  `~  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  _   |
+ * |  ESC |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  _   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | Tab  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -76,13 +76,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* COLEMAK
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |  `~  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  | bspc |
+ * |  ESC |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  | bspc |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | Tab  |   Q  |   W  |   F  |   P  |   G  |                    |   J  |   L  |   U  |   Y  |   ;  |  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | BSPC |   A  |   R  |   S  |   T  |   G  |-------.    ,-------|   H  |   N  |   E  |   I  |   O  |  '   |
  * |------+------+------+------+------+------|   [   |    |   ]   |------+------+------+------+------+------|
- * | esc  |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   K  |   M  |   ,  |   .  |   /  |  -_  |
+ * | SFT  |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   K  |   M  |   ,  |   .  |   /  |  -_  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LCTL |  OSM | NAV  | /Space  /       \Enter \  | NUM | OSM  | LALT |
  *                   |      | LSFT |      |/       /         \      \ |     | LSFT |      |
@@ -116,7 +116,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PSCR,
   _______, DZ_CLSE, XXXXXXX, DZ_VDLT, DZ_VDRT, KC_PSCR,                   KC_PGUP, KC_HOME, KC_UP,   KC_END,  XXXXXXX, KC_DEL,
   _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_SCRL,                   KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX, KC_INS,
-  _______, _______, _______, _______, _______, KC_PAUS, KC_LBRC, KC_RBRC, DZ_SCAP,   WLEFT, XXXXXXX,  WRIGHT, XXXXXXX,  KC_CAPS,
+  _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_PAUS, KC_LBRC, KC_RBRC, DZ_SCAP,   WLEFT, XXXXXXX,  WRIGHT, XXXXXXX,  KC_CAPS,
                              _______, _______, _______, _______, _______, OSL(_LEGAL), _______, _______
 ),
 /*  NUMBERS
@@ -138,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, KC_F1,   KC_F2,  KC_F3,   KC_F4, KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  DZ_QWTY,
   _______, KC_LBRC, KC_7,   KC_8,    KC_9,  KC_RBRC,                     XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, DZ_CLMK,
   DZ_LAW,S(KC_SCLN),KC_4,   KC_5,    KC_6,  KC_EQL,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
-  _______, KC_GRV,  KC_1,   KC_2,    KC_3,  KC_BSLS, KC_LBRC, KC_RBRC,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DZ_WIN,
+  _______, KC_GRV,  KC_1,   KC_2,    KC_3,  KC_BSLS, KC_LBRC, KC_RBRC,   XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, DZ_WIN,
                             _______, _______, KC_0,  KC_MINS, _______,  _______, _______, _______
 ),
 
